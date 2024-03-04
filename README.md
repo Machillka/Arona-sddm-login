@@ -4,4 +4,4 @@ Modify some problems in "Sugar Candy login", and make the theme adapted to Blue 
 # Usage
 
 # Thanks to
-This repo is built up on the [Sugar Candy login"]()
+This repo is built up on the [Sugar Candy login](https://github.com/Kangie/sddm-sugar-candy)
