@@ -51,6 +51,7 @@ Pane {
     //palette.buttonText: config.MainColor
     palette.window: config.BackgroundColor
 
+
     font.family: config.Font
     font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
     focus: true
