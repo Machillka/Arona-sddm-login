@@ -475,11 +475,11 @@ Column {
                 verticalAlignment: Text.AlignVCenter
                 opacity: 0.5
             }
-
+            //NOTE modify login button
             background: Rectangle {
                 id: buttonBackground
-                color: "white"
-                opacity: 0.2
+                color: "black"
+                opacity: 0.3
                 radius: config.RoundCorners || 0
             }
 

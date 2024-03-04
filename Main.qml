@@ -28,6 +28,8 @@ import QtQuick.Controls 2.4
 import QtGraphicalEffects 1.0
 import "Components"
 
+// Config: theme.conf
+
 Pane {
     id: root
 
@@ -38,10 +40,15 @@ Pane {
     LayoutMirroring.childrenInherit: true
 
     padding: config.ScreenPadding
+    // button blur
     palette.button: "transparent"
+
     palette.highlight: config.AccentColor
+    // Main Text
     palette.text: config.MainColor
-    palette.buttonText: config.MainColor
+    // Button Text
+    palette.buttonText: config.ButtonTextColor
+    //palette.buttonText: config.MainColor
     palette.window: config.BackgroundColor
 
     font.family: config.Font

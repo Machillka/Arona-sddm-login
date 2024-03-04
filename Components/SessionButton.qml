@@ -154,6 +154,7 @@ Item {
                     border.color: Qt.darker(root.palette.highlight, 1.1)
                 }
             },
+            // 悬浮状态
             State {
                 name: "hovered"
                 when: selectSession.hovered

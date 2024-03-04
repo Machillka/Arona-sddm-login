@@ -26,6 +26,7 @@ import QtQuick 2.11
 import QtQuick.Layouts 1.11
 import QtQuick.Controls 2.4
 
+//NOTE make the button suspend, hibernate, reboot, shutdown
 RowLayout {
 
     spacing: root.font.pointSize

@@ -59,6 +59,7 @@ Item {
             contentItem: Text {
                 text: model.name
                 font.pointSize: root.font.pointSize * 0.8
+                //NOTE: 取消大小写首字母
                 font.capitalization: Font.Capitalize
                 color: selectUser.highlightedIndex === index ? "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight : "white"
                 verticalAlignment: Text.AlignVCenter
