@@ -47,7 +47,7 @@ Pane {
     // Main Text
     palette.text: config.MainColor
     // Button Text
-    palette.buttonText: config.ButtonTextColor
+    palette.buttonText: config.MainColor
     //palette.buttonText: config.MainColor
     palette.window: config.BackgroundColor
 
