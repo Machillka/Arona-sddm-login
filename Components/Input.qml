@@ -68,6 +68,7 @@ Column {
                 username.text = currentText
             }
 
+            // make the text adapt to dark mode or white mode
             delegate: ItemDelegate {
                 width: parent.width
                 anchors.horizontalCenter: parent.horizontalCenter
