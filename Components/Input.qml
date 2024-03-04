@@ -466,7 +466,7 @@ Column {
             implicitWidth: parent.width
             enabled: config.AllowEmptyPassword == "true" || username.text != "" && password.text != "" ? true : false
             hoverEnabled: true
-
+            //FIXME: change the color of button and button text
             contentItem: Text {
                 text: parent.text
                 color: "#444"
