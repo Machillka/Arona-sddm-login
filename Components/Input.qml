@@ -76,9 +76,10 @@ Column {
                     text: model.name
                     font.pointSize: root.font.pointSize * 0.8
                     font.capitalization: Font.Capitalize
-                    color: selectUser.highlightedIndex === index ? root.palette.highlight.hslLightness >= 0.7 ? "#444" : "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight.hslLightness >= 0.8 ? "#444" : root.palette.highlight : "white"
+                    color: selectUser.highlightedIndex === index ? root.palette.highlight.hslLightness >= 0.7 ? "#000" : "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight.hslLightness >= 0.8 ? "#000" : root.palette.highlight : "white"
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
+                    opacity: 0.7
                 }
                 highlighted: parent.highlightedIndex === index
                 background: Rectangle {
@@ -469,17 +470,18 @@ Column {
             //FIXME: change the color of button and button text
             contentItem: Text {
                 text: parent.text
-                color: "#444"
+                color: "#000"
                 font.pointSize: root.font.pointSize
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                opacity: 0.5
+                opacity: 0.7
             }
             //NOTE modify login button
             background: Rectangle {
                 id: buttonBackground
                 // color: "white"
-                color: "#f3cce7"
+                // color: "#f3cce7"
+                color: "#e4e6ec"
                 opacity: 0.2
                 radius: config.RoundCorners || 0
             }
@@ -492,7 +494,7 @@ Column {
                         target: buttonBackground
                         // color: Qt.darker(root.palette.highlight, 1.1)
                         // color: Qt.darker(Qt.white, 1.1)
-                        opacity: 0.3
+                        opacity: 0.2
                     }
                     PropertyChanges {
                         target: loginButton.contentItem
@@ -505,7 +507,7 @@ Column {
                         target: buttonBackground
                         // color: Qt.lighter(root.palette.highlight, 1.15)
                         // color: Qt.lighter(Qt.white, 1.15)
-                        opacity: 0.3
+                        opacity: 0.2
                     }
                     PropertyChanges {
                         target: loginButton.contentItem
@@ -519,7 +521,7 @@ Column {
                         target: buttonBackground
                         // color: Qt.lighter(root.palette.highlight, 1.2)
                         // color: Qt.lighter(Qt.white, 1.2)
-                        opacity: 0.3
+                        opacity: 0.2
                     }
                     PropertyChanges {
                         target: loginButton.contentItem
@@ -533,7 +535,7 @@ Column {
                         target: buttonBackground;
                         // color: root.palette.highlight;
                         // color: Qt.white
-                        opacity: 0.3
+                        opacity: 0.2
                     }
                     PropertyChanges {
                         target: loginButton.contentItem;

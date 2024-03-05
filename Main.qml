@@ -53,7 +53,9 @@ Pane {
 
 
     font.family: config.Font
-    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
+    // font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
+    //NOTE scale the fontsize
+    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 70)
     focus: true
 
     property bool leftleft: config.HaveFormBackground == "true" &&
@@ -269,6 +271,8 @@ Pane {
 
         GaussianBlur {
             id: blur
+            //NOTE: Add ransparentBorder: true
+            transparentBorder: true
 
             height: parent.height
             width: config.FullBlur == "true" ? parent.width : form.width

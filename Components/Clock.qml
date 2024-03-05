@@ -25,10 +25,13 @@
 import QtQuick 2.11
 import QtQuick.Controls 2.4
 
+//TODO Add the opacity for clock
 Column {
     id: clock
     spacing: 0
     width: parent.width / 2
+
+    opacity: 0.9
 
     Label {
         anchors.horizontalCenter: parent.horizontalCenter
