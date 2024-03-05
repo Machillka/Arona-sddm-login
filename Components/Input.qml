@@ -475,8 +475,9 @@ Column {
                 font.pointSize: root.font.pointSize
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                opacity: 0.7
+                opacity: 0.5
             }
+            // opacity: 0.7
             //NOTE modify login button
             background: Rectangle {
                 id: buttonBackground

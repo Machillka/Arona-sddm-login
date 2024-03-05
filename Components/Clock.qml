@@ -31,7 +31,7 @@ Column {
     spacing: 0
     width: parent.width / 2
 
-    opacity: 0.8
+    // opacity: 0.8
 
     Label {
         anchors.horizontalCenter: parent.horizontalCenter
@@ -39,6 +39,8 @@ Column {
         color: root.palette.text
         renderType: Text.QtRendering
         text: config.HeaderText
+
+        opacity: 0.7
     }
 
     Label {
@@ -50,6 +52,8 @@ Column {
         function updateTime() {
             text = new Date().toLocaleTimeString(Qt.locale(config.Locale), config.HourFormat == "long" ? Locale.LongFormat : config.HourFormat !== "" ? config.HourFormat : Locale.ShortFormat)
         }
+
+        opacity: 0.7
     }
 
     Label {
@@ -60,6 +64,8 @@ Column {
         function updateTime() {
             text = new Date().toLocaleDateString(Qt.locale(config.Locale), config.DateFormat == "short" ? Locale.ShortFormat : config.DateFormat !== "" ? config.DateFormat : Locale.LongFormat)
         }
+
+        opacity: 0.7
     }
 
     Timer {

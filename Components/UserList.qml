@@ -58,7 +58,8 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             contentItem: Text {
                 text: model.name
-                font.pointSize: root.font.pointSize * 0.8
+                //TODO Scale the pointSize for user name
+                font.pointSize: root.font.pointSize
                 //NOTE: 取消大小写首字母
                 font.capitalization: Font.Capitalize
                 color: selectUser.highlightedIndex === index ? "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight : "white"
