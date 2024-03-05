@@ -478,7 +478,8 @@ Column {
             //NOTE modify login button
             background: Rectangle {
                 id: buttonBackground
-                color: "white"
+                // color: "white"
+                color: "#f3cce7"
                 opacity: 0.2
                 radius: config.RoundCorners || 0
             }
