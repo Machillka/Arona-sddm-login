@@ -55,7 +55,7 @@ Pane {
     font.family: config.Font
     // font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
     //NOTE scale the fontsize
-    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 70)
+    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
     focus: true
 
     property bool leftleft: config.HaveFormBackground == "true" &&

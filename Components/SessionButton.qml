@@ -68,13 +68,17 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             contentItem: Text {
                 text: model.name
-                font.pointSize: root.font.pointSize * 0.8
-                color: selectSession.highlightedIndex === index ? root.palette.highlight.hslLightness >= 0.7 ? "#000" : "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight.hslLightness >= 0.8 ? "#000" : root.palette.highlight : "white"
+                //TODO Scale the pointSize
+                font.pointSize: root.font.pointSize * 0.9s
+                // font.pointSize: root.font.pointSize * 0.8
+                color: selectSession.highlightedIndex === index ? root.palette.highlight.hslLightness >= 0.7 ? "#000000" : "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight.hslLightness >= 0.8 ? "#000" : root.palette.highlight : "white"
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
-                //NOTE Add rext blur
-                opacity: 0.7
             }
+
+            //NOTE Add rext blur
+            opacity: 0.7
+
             highlighted: parent.highlightedIndex === index
             background: Rectangle {
                 color: selectSession.highlightedIndex === index ? root.palette.highlight : "transparent"
