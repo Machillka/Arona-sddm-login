@@ -1,6 +1,8 @@
 # Blue Archive theme login theme for SDDM
 Modify some problems in "Sugar Candy login", and make the theme adapted to Blue Archive (my favorite game)
 
+![Preview](/Previews/PartialBlur.png "Preview")
+
 # Usage
 
 1. Use the terminal to install this theme
