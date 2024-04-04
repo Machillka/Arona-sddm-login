@@ -59,8 +59,7 @@ Item {
             contentItem: Text {
                 text: model.name
                 //TODO Scale the pointSize for user name
-                font.pointSize: root.font.pointSize
-                //NOTE: 取消大小写首字母
+                font.pointSize: root.font.pointSize * 1.5
                 font.capitalization: Font.Capitalize
                 color: selectUser.highlightedIndex === index ? "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight : "white"
                 verticalAlignment: Text.AlignVCenter
@@ -76,9 +75,9 @@ Item {
                 id: usernameIcon
                 width: selectUser.height * 0.8
                 height: parent.height
-                anchors.left: parent.left
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.leftMargin: selectUser.height * 0.125
+                // anchors.left: parent.left
+                // anchors.verticalCenter: parent.verticalCenter
+                // anchors.leftMargin: selectUser.height * 0.125
                 icon.height: parent.height * 0.25
                 icon.width: parent.height * 0.25
                 enabled: false
