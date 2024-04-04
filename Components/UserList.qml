@@ -28,7 +28,7 @@ import QtGraphicalEffects 1.0
 
 Item {
     id: usernameField
-
+    // zone size
     height: root.font.pointSize * 4.5
     width: parent.width / 2
     anchors.horizontalCenter: parent.horizontalCenter
@@ -58,8 +58,7 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             contentItem: Text {
                 text: model.name
-                //TODO Scale the pointSize for user name
-                font.pointSize: root.font.pointSize * 1.5
+                font.pointSize: root.font.pointSize * 0.8
                 font.capitalization: Font.Capitalize
                 color: selectUser.highlightedIndex === index ? "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight : "white"
                 verticalAlignment: Text.AlignVCenter
@@ -75,9 +74,9 @@ Item {
                 id: usernameIcon
                 width: selectUser.height * 0.8
                 height: parent.height
-                // anchors.left: parent.left
-                // anchors.verticalCenter: parent.verticalCenter
-                // anchors.leftMargin: selectUser.height * 0.125
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.leftMargin: selectUser.height * 0.125
                 icon.height: parent.height * 0.25
                 icon.width: parent.height * 0.25
                 enabled: false
@@ -133,7 +132,7 @@ Item {
                     target: usernameIcon
                     icon.color: Qt.lighter(root.palette.highlight, 1.1)
                 }
-            },
+            },modify user select
             State {
                 name: "hovered"
                 when: selectUser.hovered
@@ -167,6 +166,8 @@ Item {
         id: username
         text: config.ForceLastUser == "true" ? selectUser.currentText : null
         font.capitalization: Font.Capitalize
+        // Scale the font size
+        font.pointSize: root.font.pointSize * 0.9
         anchors.centerIn: parent
         height: root.font.pointSize * 3
         width: parent.width
