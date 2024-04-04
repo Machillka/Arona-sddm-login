@@ -82,9 +82,6 @@ Item {
                 enabled: false
                 icon.color: root.palette.text
                 icon.source: Qt.resolvedUrl("../Assets/User.svgz")
-                // Add transparent Color
-                color: "transparent"
-                border.color: "transparent"
         }
 
         background: Rectangle {
