@@ -15,6 +15,12 @@ After that you will have to point SDDM to the new theme by editing its config fi
 
 In the [Theme] section simply add the themes name to this line: Current=Arona. If you don't care for SDDM options and you had to create the file from blank just add these two lines and save it!
 
+Or Easily install from sddm settings
+
+![installation](installation.png)
+
+(Searching Key words: "Arona")
+
 # Thanks to
 
 This repo is built up on the [Sugar Candy login](https://github.com/Kangie/sddm-sugar-candy)
