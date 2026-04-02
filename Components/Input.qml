@@ -22,9 +22,9 @@
 // along with SDDM Sugar Candy. If not, see <https://www.gnu.org/licenses/>
 //
 
-import QtQuick 2.11
-import QtQuick.Layouts 1.11
-import QtQuick.Controls 2.4
+import QtQuick 6.0
+import QtQuick.Layouts 6.0
+import QtQuick.Controls 6.0
 import Qt5Compat.GraphicalEffects
 
 Column {
